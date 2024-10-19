@@ -32,10 +32,6 @@ def scrape_votes(driver):
     )
     new_page.click()
 
-    # LEGÖRDÜLŐ MENÜ KATTINTÁSA
-#    select_all = WebDriverWait(driver, 10).until(
-#        EC.element_to_be_clickable((By.XPATH, '//*[@id="listOfVotes_length"]/label/select'))
-#    )
     dropdown = Select(driver.find_element(By.XPATH, '//*[@id="listOfVotes_length"]/label/select'))
     dropdown.select_by_visible_text("All")
 
