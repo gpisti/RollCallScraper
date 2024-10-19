@@ -20,7 +20,7 @@ def main():
 
         # CSV MENTÉSE
         current_folder = os.path.dirname(os.path.abspath(__file__))
-        merged_file_path = os.path.join(current_folder, "merged_votes.csv")
+        merged_file_path = os.path.join(current_folder, "RollCallVotes.csv")
         save_data_to_csv(merged_df, merged_file_path)
 
     finally:
